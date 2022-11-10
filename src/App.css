@@ -1,0 +1,23 @@
+
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.Nav {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.sideNav {
+  width: 20%;
+}
+
+.topNav {
+  position: absolute;
+  margin-left: 20%;
+  width: 80vw;
+  height: 8vh;
+}
+

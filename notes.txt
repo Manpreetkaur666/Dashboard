@@ -1,0 +1,4 @@
+1) install react-app
+2) copy tailwind template
+3) CDN for tailwid in index.html
+4) install chart.js
