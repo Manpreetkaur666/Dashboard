@@ -1,5 +1,5 @@
 import React from 'react';
-import bargraph from '../bargraph.png';
+import bargraph from '../images/bargraph.png';
 
 const Leads = () => {
   return (

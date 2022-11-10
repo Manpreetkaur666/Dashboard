@@ -1,5 +1,5 @@
 import React from 'react';
-import pieChart from '../pie-chart.png';
+import pieChart from '../images/pie-chart.png';
 
 const Orders = () => {
   return (

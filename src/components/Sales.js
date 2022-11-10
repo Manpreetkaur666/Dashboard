@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import linegraph from '../Linegraph.png';
+import linegraph from '../images/Linegraph.png';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
