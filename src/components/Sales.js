@@ -38,7 +38,7 @@ const Sales = () => {
        
        <div className='row-start-4'>      
        <div class="shadow-lg rounded-lg overflow-hidden">
-       <img className='mt-5 mb-10' src={linegraph}></img>
+       <img className='my-9' src={linegraph}></img>
        </div>
        </div>
        

@@ -11,7 +11,7 @@ const Leads = () => {
     
       <div className='row-start-4'>      
        <div class="shadow-lg rounded-lg overflow-hidden">
-       <img className='mt-5 mb-10' src={bargraph}></img>
+       <img className='mt-10 mb-8' src={bargraph}></img>
        </div>
        </div>
   

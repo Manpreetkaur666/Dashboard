@@ -25,7 +25,7 @@ const Analytics = () => {
         <Orders />
         </div>
 
-        <div className='m-2 grid grid-cols-2 gap-5'>
+        <div className='m-2 grid grid-cols-2 gap-5 mt-20'>
           <Transactions />
           <Promo />
         </div>

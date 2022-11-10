@@ -11,7 +11,7 @@ const Orders = () => {
     
       <div className='row-start-4'>      
        <div class="shadow-lg rounded-lg overflow-hidden">
-       <img className='mt-5 mb-10' src={pieChart}></img>
+       <img className='my-9' src={pieChart}></img>
        </div>
        </div>
   
