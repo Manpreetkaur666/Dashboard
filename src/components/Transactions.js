@@ -1,6 +1,8 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
+import transactions from "../transcationdata.json"
 
 const Transactions = () => {
+    const data = transactions;
   return (
     <Fragment>
         <div>
@@ -9,8 +11,6 @@ const Transactions = () => {
        <p className='text-blue-500'>View All</p>
       </div>
       <div className='table'>
-
-
       <div className="mt-2 flex flex-col">
             <div className="-my-2 overflow-x-auto -mx-4 sm:-mx-6 lg:-mx-8">
               <div  className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -28,65 +28,34 @@ const Transactions = () => {
                 
                   </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
+                    {data.transactions.map(trans =>(
                     <tr>
                     <td className="px-1 py-2 whitespace-nowrap">
                     <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" className="rounded-full w-10" alt="Avatar" />
                     </td>
                     <td className="px-3 py-5 whitespace-nowrap">
-                        Ralph Edwards
+                        {trans.name}
                     </td>
                     <td className="px-3 py-5 whitespace-nowrap">
-                        Pending
+                        {trans.OrderStatus}
                     </td>
                     <td className="px-3 py-5 whitespace-nowrap">
-                        Facebook
+                        {trans.Advertasing}
                     </td>
                     <td className="px-3 py-5 whitespace-nowrap">
-                        $120
-                    </td>
-                    <td className="px-3 py-5 whitespace-nowrap">
-                        ...
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-1 py-2 whitespace-nowrap">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" className="rounded-full w-10" alt="Avatar" />
-                    </td>
-                    <td className="px-3 py-5 whitespace-nowrap">
-                        Ralph Edwards
-                    </td>
-                    <td className="px-3 py-5 whitespace-nowrap">
-                        Pending
-                    </td>
-                    <td className="px-3 py-5 whitespace-nowrap">
-                        Facebook
-                    </td>
-                    <td className="px-3 py-5 whitespace-nowrap">
-                        $120
+                        {trans.Invoice}
                     </td>
                     <td className="px-3 py-5 whitespace-nowrap">
                         ...
                     </td>
                     </tr>
+                     ))}
                 </tbody>
                     </table>
                 </div>
               </div>
           </div>
          </div>
-
-
-
-
-
-         {/* <div className='grid grid-cols-6 divide-x-8 space-x-4 m-1'>
-             <p>.</p>
-             <p>Name,Phone</p>
-             <p>Order Status</p>
-             <p>Advertasing</p>
-             <p>Invoice</p>
-             <p>.</p>
-         </div> */}
       </div>
       </div>
     </Fragment>
